@@ -14,4 +14,6 @@ if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
 endif;
 add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 
+defined( 'CHLD_THM_CFG_IGNORE_PARENT' ) or define( 'CHLD_THM_CFG_IGNORE_PARENT', TRUE );
+
 // END ENQUEUE PARENT ACTION

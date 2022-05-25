@@ -1,18 +1,20 @@
 /*
 Theme Name: aaleader-child
-Theme URI: localhost
+Theme URI: http://localhost
 Template: storefront
 Author: Jeppe
-Author URI: localhost
-Version: 1.1.1653399607
-Updated: 2022-05-24 15:40:07
+Author URI: http://localhost
+Version: 1.1.1653472169
+Updated: 2022-05-25 11:49:29
 
 */
 
-p{
-    color:green;
-}
-
 a {
-    color:aquamarine;
+    color: aquamarine;
+}
+.entry-header {
+    width: 100vw;
+}
+.col-full {
+    display: none;
 }
