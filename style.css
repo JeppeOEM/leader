@@ -12,9 +12,44 @@ Updated: 2022-05-25 11:49:29
 a {
     color: aquamarine;
 }
-.entry-header {
+/* .entry-header {
     width: 100vw;
-}
-.col-full {
+} */
+
+.entry-title {
     display: none;
+}
+
+
+/* fjerner en stor titel i navbaren */
+
+.beta-stite-title {
+    display: none;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+
+}
+
+/* fjerner søge funktion */
+.site-header .site-search { display: none; }
+
+
+.page-id-20 .storefront-breadcrumb {
+    display: none;
+}
+
+
+.page-id-20 .wp-container-3{
+    padding-top: 50px;
+
+}
+
+
+
+/* startside */
+.page-id-66 img{
+    width: 100vw;
 }
