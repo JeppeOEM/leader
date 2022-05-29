@@ -12,9 +12,7 @@ Updated: 2022-05-25 11:49:29
 a {
     color: aquamarine;
 }
-/* .entry-header {
-    width: 100vw;
-} */
+
 
 .entry-title {
     display: none;
@@ -37,7 +35,11 @@ header{
 .site-header .site-search { display: none; }
 
 
-.page-id-20 .storefront-breadcrumb {
+.page-id-20  .storefront-breadcrumb {
+    display: none;
+}
+
+ .storefront-breadcrumb {
     display: none;
 }
 
@@ -50,6 +52,40 @@ header{
 
 
 /* startside */
-.page-id-66 img{
+/* .page-id-66 img{
     width: 100vw;
+}
+ */
+/* startside */
+.page-id-159 .widget-area {
+    display: none;
+}
+
+
+
+.kontaktbox{
+    width: 100%;
+}
+
+/* #main-content {
+    display:flex;
+  } */
+
+ /*  shop */
+
+/*  .page-description img{
+    width: 100vw;
+} */
+
+/* specialarbejde */
+
+.page-id-179 p{
+    
+    color: green;
+
+}
+
+.bottombox h2{
+    text-align: center;
+    color: blue;
 }
