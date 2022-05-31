@@ -9,16 +9,26 @@ Updated: 2022-05-25 11:49:29
 
 */
 
-a {
-    color: aquamarine;
+/* tekst til hero billed */
+.caption{
+    margin-top:20vw; 
+    white-space: nowrap;
+    color:black;
+    
+
 }
-
-
 .entry-title {
     display: none;
 }
 
+#masthead > div.col-full{
+    display: none;
+}
 
+#masthead .site-header{
+    padding-top:0;
+}
+ */
 /* fjerner en stor titel i navbaren */
 
 .beta-stite-title {
@@ -28,16 +38,17 @@ a {
 header{
     padding: 0;
     margin: 0;
-
 }
+
+
+body {
+    background-color: #FDFAF8;
+  }
+
 
 /* fjerner søge funktion */
 .site-header .site-search { display: none; }
 
-
-.page-id-20  .storefront-breadcrumb {
-    display: none;
-}
 
  .storefront-breadcrumb {
     display: none;
@@ -45,47 +56,74 @@ header{
 
 
 .page-id-20 .wp-container-3{
-    padding-top: 50px;
+    padding-top: 65px;
 
 }
 
-
-
-/* startside */
-/* .page-id-66 img{
-    width: 100vw;
-}
- */
 /* startside */
 .page-id-159 .widget-area {
     display: none;
 }
 
 
-
-.kontaktbox{
-    width: 100%;
-}
-
-/* #main-content {
-    display:flex;
-  } */
-
- /*  shop */
-
-/*  .page-description img{
-    width: 100vw;
-} */
-
-/* specialarbejde */
-
-.page-id-179 p{
-    
-    color: green;
-
-}
-
+/*  ---> specialarbejde <--- */
 .bottombox h2{
     text-align: center;
-    color: blue;
+    color: green;
 }
+
+
+
+#post-179 > div.entry-content > div.wp-container-5.wp-block-group > div > div.wp-container-4.wp-block-group.billedbox > div {
+    background-color:white;    
+    width: 300px;
+    padding: 25px;
+    position: relative;
+    margin-left: 50vw;
+    top: -30vw
+}
+
+#post-179 > div.entry-content > div.wp-container-5.wp-block-group.alignfull > div > div.wp-container-4.wp-block-group.billedbox{
+    display: none;
+}
+
+
+/*     specialarbejde box i bunden */
+
+#post-179 > div.entry-content > div.wp-container-20.wp-block-group{
+    margin-top: 60px;
+}
+
+#post-179 > div.entry-content > div.wp-container-20.wp-block-group > div{
+
+    margin-top: 10vw;
+    background-color: white;
+
+    width: 500px;
+    margin: auto;
+    flex: nowrap;
+    justify-content: center;
+    
+}
+/* 
+kontakt */
+
+
+
+/* 
+hvem er jeg */
+@media screen and (max-width: 600px) {
+
+/*     specialarbejde box i bunden */
+    #post-179 .wp-container-14{
+        width: 300px;
+        
+        }
+        #post-179 .wp-container-15{
+
+        width: 65vw;
+
+    
+        }
+
+  }
