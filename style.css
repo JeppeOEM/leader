@@ -9,6 +9,9 @@ Updated: 2022-05-25 11:49:29
 
 */
 
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -37,10 +40,12 @@ background-color: red;
 
 }
 
-.logoheader {
-    background-image: url(http://localhost/wordpress/wp-content/uploads/2022/05/AA.pngg);
+/* .logoheader {
+    background-image: url("img/logo.png");
+    width: 50px;
+    height: 50px;
 
-}
+} */
 
 .entry-title {
     display: none;
@@ -152,3 +157,14 @@ hvem er jeg */
         }
 
   }
+
+
+/* shop */
+
+/* shop items størrelse */
+#primary{
+    width: 100%!important;
+}
+
+
+
