@@ -49,7 +49,7 @@
 		do_action( 'storefront_header' );
 		?>
 
-	<img class="logoheader" src="img\logo.png" alt="banner logo">
+	<div class="logoheader"></div>
 	</header><!-- #masthead -->
 	
 	<?php

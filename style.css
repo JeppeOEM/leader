@@ -9,14 +9,39 @@ Updated: 2022-05-25 11:49:29
 
 */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.entry-content {
+    margin-top: -1.3rem
+}
+
+.topbox{
+position: absolute;
+z-index: 100;
+top: 50vh;
+right: 10%;
+height: 200px;
+width: 100px;
+background-color: red;
+
+}
+
 /* tekst til hero billed */
 .caption{
     margin-top:20vw; 
     white-space: nowrap;
     color:black;
-    
 
 }
+
+.logoheader {
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2022/05/AA.pngg);
+
+}
+
 .entry-title {
     display: none;
 }
@@ -25,8 +50,8 @@ Updated: 2022-05-25 11:49:29
     display: none;
 }
 
-#masthead .site-header{
-    padding-top:0;
+#masthead.site-header{
+    padding-top: 1em !important;
 }
  */
 /* fjerner en stor titel i navbaren */
