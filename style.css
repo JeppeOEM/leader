@@ -168,3 +168,78 @@ hvem er jeg */
 
 
 
+
+
+
+/* --- Styling af Footer ----------------------- */
+footer .col-full {
+    text-align: center;
+}
+
+footer#colophon {
+    padding: 0;
+}
+
+footer#colophon img {	/* Fiks størrelse på logo */
+    max-width: 200px;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+footer .links {
+    margin: 0 auto;
+    max-width: 360px;
+    margin-top: -64px;
+    margin-bottom: 12px;
+}
+
+footer .links a {
+    text-decoration: none;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+footer .address p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+footer .policies {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer .policies a {
+    text-decoration: none;
+}
+
+footer .copyright {
+    margin: 18px 0;
+}
+
+footer .copyright p {
+    font-weight: 300;
+    margin: 0;
+}
+
+footer .copyright a {
+    font-weight: 700;
+}
+
+.site-info {
+    display: none;
+}
+
+@media screen and (min-width: 450px) {
+    footer .links {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .policies {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* --- (slut på styling af footer) ------------- */
