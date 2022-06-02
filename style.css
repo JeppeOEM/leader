@@ -9,6 +9,9 @@ Updated: 2022-05-25 11:49:29
 
 */
 
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -18,16 +21,6 @@ Updated: 2022-05-25 11:49:29
     margin-top: -1.3rem
 }
 
-.topbox{
-position: absolute;
-z-index: 100;
-top: 50vh;
-right: 10%;
-height: 200px;
-width: 100px;
-background-color: red;
-
-}
 
 /* tekst til hero billed */
 .caption{
@@ -37,10 +30,12 @@ background-color: red;
 
 }
 
-.logoheader {
-    background-image: url(http://localhost/wordpress/wp-content/uploads/2022/05/AA.pngg);
+/* .logoheader {
+    background-image: url("img/logo.png");
+    width: 50px;
+    height: 50px;
 
-}
+} */
 
 .entry-title {
     display: none;
@@ -92,12 +87,59 @@ body {
 
 
 /*  ---> specialarbejde <--- */
-.bottombox h2{
-    text-align: center;
-    color: green;
+.topbox {
+	position: absolute;
+	z-index: 100;
+	top: 70vh;
+	right: 2%;
+	height: 60%;
+	width: 22%;
+	background-color: #ffffff;
+	padding: 45px;
+}
+.topboxh3 {
+	padding-bottom: 30px;
 }
 
+.topboxa {
+	background-color: #7C7065;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-transform: capitalize;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
+.topboxa span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.topboxa span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.topboxa:hover span {
+  padding-right: 25px;
+}
+
+.topboxa:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 #post-179 > div.entry-content > div.wp-container-5.wp-block-group > div > div.wp-container-4.wp-block-group.billedbox > div {
     background-color:white;    
@@ -152,3 +194,89 @@ hvem er jeg */
         }
 
   }
+
+
+/* shop */
+
+/* shop items størrelse */
+#primary{
+    width: 100%!important;
+}
+
+
+
+
+
+
+/* --- Styling af Footer ----------------------- */
+footer .col-full {
+    text-align: center;
+}
+
+footer#colophon {
+    padding: 0;
+}
+
+footer#colophon img {	/* Fiks størrelse på logo */
+    max-width: 200px;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+footer .links {
+    margin: 0 auto;
+    max-width: 360px;
+    margin-top: -64px;
+    margin-bottom: 12px;
+}
+
+footer .links a {
+    text-decoration: none;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+footer .address p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+footer .policies {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer .policies a {
+    text-decoration: none;
+}
+
+footer .copyright {
+    margin: 18px 0;
+}
+
+footer .copyright p {
+    font-weight: 300;
+    margin: 0;
+}
+
+footer .copyright a {
+    font-weight: 700;
+}
+
+.site-info {
+    display: none;
+}
+
+@media screen and (min-width: 450px) {
+    footer .links {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .policies {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* --- (slut på styling af footer) ------------- */
