@@ -354,3 +354,53 @@ hvem er jeg */
         padding-left: none;
     }
 /* --- (slut på fiks/merge af nav og bottom bar) ------------- */
+
+.page-id-179 .kontaktboks {
+    display: flex;
+    justify-content: space-around;
+    align-content:space-around;
+    gap: 50px;
+}
+
+.page-id-179 .btn {
+    background-color:#7C7065 ;
+    width: 293px !important;
+    height: 77px;
+    color:#ffff;
+ }
+
+.page-id-179 .produkt {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page-id-179 .checkboks {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page-id-179 .information {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page-id-179 .information * {
+    width: 100%;
+}
+
+.page-id-179 .bokslille {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-id-179 .bokslille * {
+    width: 100%;
+}
+
+.page-id-179 .billede {
+    display: flex;
+}
