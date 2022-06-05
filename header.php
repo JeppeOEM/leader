@@ -50,7 +50,7 @@
 		?>
 
 	<h1>
-		<img src="<?php echo get_template_directory_uri(); ?>-child/img/logo.png" width="50" height="50" alt=""height=""alt="Alfred Andersens Logo">
+		<a href="https://mahadeva.dk/"><img src="<?php echo get_template_directory_uri(); ?>-child/img/logo.png" width="50" height="50" alt=""height=""alt="Alfred Andersens Logo"></a>
 	</h1>
 	</header><!-- #masthead -->
 	
