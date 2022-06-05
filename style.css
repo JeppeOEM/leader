@@ -17,6 +17,10 @@ Updated: 2022-05-25 11:49:29
     margin: 0;
 }
 
+body {
+    background-color: #FDFAF8;
+}
+
 /* Fiks af Logo + Basket til Navbar */
     #site-header-cart {	/* Fiks alignment på indkøbskurv */
         width: 70px;
@@ -98,6 +102,15 @@ body {
 /* startside */
 .page-id-159 .widget-area {
     display: none;
+}
+
+#post-66 p {    /* Font fix til Forside */
+	font-family: "Glegoo", "Noto Sans", serif !important;
+}
+
+a.wp-block-button__link {   /* Knapper mere identiske med XD mockup */
+	font-size: 1.15rem !important;
+	padding: 12px !important;
 }
 
 
