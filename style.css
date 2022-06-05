@@ -295,3 +295,62 @@ hvem er jeg */
         }
     }
 /* --- (slut på styling af footer) ------------- */
+
+
+/* --- Merge af Nav og Bottom Bar ----------------------- */
+    .storefront-handheld-footer-bar {
+        top: 16px;
+        bottom: unset;
+        background: none;
+        width: 110px;
+        margin: 0 auto;
+        position: absolute;
+        box-shadow: none !important;
+    }
+
+    .storefront-handheld-footer-bar ul {
+        width: 110px;
+    }
+
+    .storefront-handheld-footer-bar .my-account {
+        display: none;
+    }
+
+    .storefront-handheld-footer-bar ul.columns-3 li {
+        width: 50px;
+    }
+
+    .storefront-handheld-footer-bar ul li {
+        background: none;
+        float: none; 
+    }
+
+    .storefront-handheld-footer-bar ul li>a {
+        height: 48px;
+    }
+
+    .storefront-handheld-footer-bar ul li>a::before {
+        line-height: inherit;
+        font-size: 1.5rem;
+        bottom: unset;
+    }
+
+    .storefront-handheld-footer-bar ul li.search .site-search {
+        top: -90px;
+        padding: 0;
+        background: none;
+        left: -42px;
+        width: 0px;
+        transition: transform .2s;
+    }
+
+    .storefront-handheld-footer-bar ul li.search.active .site-search {
+        transform: scale(1.2);
+        top: 52px;
+        width: 200px;
+    }
+
+    .widget_product_search form:not(.wp-block-search) input[type=search] {
+        padding-left: none;
+    }
+/* --- (slut på fiks/merge af nav og bottom bar) ------------- */
