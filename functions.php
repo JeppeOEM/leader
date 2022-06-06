@@ -16,32 +16,28 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 
 defined( 'CHLD_THM_CFG_IGNORE_PARENT' ) or define( 'CHLD_THM_CFG_IGNORE_PARENT', TRUE );
 
-
-    
-
 // END ENQUEUE PARENT ACTION
-/* 
-
-loader jquery form script */
-
-    /* parameters: handle/navn, src, dependencies(andre javascript filer), version, in_footer = true/false i footer eller header */
-
-/*     function add_js_scripts(){
-
-    wp_enqueue_scripts('js_scripts', get_stylesheet_directory_uri(). '/js/form_script.js',[],'1.0.0', false)
-}
-  */
-
-  function wpb_hook_javascript() {
+// 
+// Indsætter javascript i headeren på alle sider
+function wpb_hook_javascript() {
     ?>
         <script>
-
-function myFunction() {
-  var element = document.getElementById("kontaktbox");
-  element.classList.toggle("mystyle");
+//fjerner flex så boxen bliver gemt
+function hideBox() {
+  var x = document.getElementById("kontaktboks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+	x.style.display = "flex";
+  }
 }
+			
+     function contactWindow() {
+      var contactWindow = window.open("http://net-informations.com", "_blank", "top=100, left=100, width=800, height=500, menubar=yes,toolbar=yes, scrollbars=yes, resizable=yes");
+      }
         </script>
     <?php
 }
+//javascript bliver tilføjet til wordpress headeren og loader derfor på alle sider.
 add_action('wp_head', 'wpb_hook_javascript');
  

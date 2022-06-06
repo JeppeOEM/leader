@@ -47,11 +47,12 @@
 		 * @hooked storefront_primary_navigation_wrapper_close - 68
 		 */
 		do_action( 'storefront_header' );
+		<h1>
+		<a href="https://mahadeva.dk/"><img src="<?php echo get_template_directory_uri(); ?>-child/img/logo.png" width="50" height="50" alt=""height=""alt="Alfred Andersens Logo"></a>
+		</h1>
 		?>
 
-	<h1>
-		<a href="https://mahadeva.dk/"><img src="<?php echo get_template_directory_uri(); ?>-child/img/logo.png" width="50" height="50" alt=""height=""alt="Alfred Andersens Logo"></a>
-	</h1>
+
 	</header><!-- #masthead -->
 	
 	<?php

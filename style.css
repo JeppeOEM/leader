@@ -17,10 +17,6 @@ Updated: 2022-05-25 11:49:29
     margin: 0;
 }
 
-body {
-    background-color: #FDFAF8;
-}
-
 /* Fiks af Logo + Basket til Navbar */
     #site-header-cart {	/* Fiks alignment på indkøbskurv */
         width: 70px;
@@ -104,11 +100,11 @@ body {
     display: none;
 }
 
-#post-66 p {    /* Font fix til Forside */
+#post-66 p {
 	font-family: "Glegoo", "Noto Sans", serif !important;
 }
 
-a.wp-block-button__link {   /* Knapper mere identiske med XD mockup */
+a.wp-block-button__link {
 	font-size: 1.15rem !important;
 	padding: 12px !important;
 }
@@ -130,6 +126,7 @@ a.wp-block-button__link {   /* Knapper mere identiske med XD mockup */
 }
 
 .topboxa {
+
 	background-color: #7C7065;
 	border: none;
 	color: #FFFFFF;
@@ -169,7 +166,14 @@ a.wp-block-button__link {   /* Knapper mere identiske med XD mockup */
   right: 0;
 }
 
-#post-179 > div.entry-content > div.wp-container-5.wp-block-group > div > div.wp-container-4.wp-block-group.billedbox > div {
+.bottombox{
+	background-color: #ffffff;
+	padding: 45px;
+}
+}
+
+
+/* #post-179 > div.entry-content > div.wp-container-5.wp-block-group > div > div.wp-container-4.wp-block-group.billedbox > div {
     background-color:white;    
     width: 300px;
     padding: 25px;
@@ -181,7 +185,7 @@ a.wp-block-button__link {   /* Knapper mere identiske med XD mockup */
 #post-179 > div.entry-content > div.wp-container-5.wp-block-group.alignfull > div > div.wp-container-4.wp-block-group.billedbox{
     display: none;
 }
-
+*/
 
 /*     specialarbejde box i bunden */
 
@@ -368,6 +372,11 @@ hvem er jeg */
     }
 /* --- (slut på fiks/merge af nav og bottom bar) ------------- */
 
+#kontaktboks{
+	display: none;
+}
+
+
 .page-id-179 .kontaktboks {
     display: flex;
     justify-content: space-around;
@@ -417,3 +426,4 @@ hvem er jeg */
 .page-id-179 .billede {
     display: flex;
 }
+
