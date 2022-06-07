@@ -32,9 +32,9 @@ Updated: 2022-05-25 11:49:29
 }
 
 /* Fiks af Logo, Font + Basket til Navbar */
-    #masthead.site-header {    /* Tilføj Glegoo til font options */
-        font-family: "Glegoo", "Noto Sans", sans-serif;
-    }
+	#masthead.site-header {
+		font-family: "Glegoo", "Noto Sans", sans-serif;
+	}
 
     #site-header-cart {	/* Fiks alignment på indkøbskurv */
         width: 70px;
@@ -81,7 +81,7 @@ Updated: 2022-05-25 11:49:29
 #masthead.site-header{
     padding-top: 1em !important;
 }
- */
+
 /* fjerner en stor titel i navbaren */
 
 .beta-stite-title {
@@ -154,7 +154,7 @@ a.wp-block-button__link, button.add_to_cart_button {
 
 .topboxa {
 	background-color: white;
-    border: 3px solid #7C7065 !important;
+	border: 3px solid #7C7065 !important;
 	color: #7C7065;
 	text-align: center;
 	font-size: 28px;
@@ -256,32 +256,32 @@ hvem er jeg */
 
 
 /* --- Rettelser til Webshop ------------------- */
-    .woocommerce-shop .wp-block-navigation.items-justified-center {
-        min-height: 72px;
-    }
+	.woocommerce-shop .wp-block-navigation.items-justified-center {
+		min-height: 72px;
+	}
 
-    .woocommerce-shop .wp-block-navigation .wp-block-navigation-item__content {
-        font-size: 1.2rem;
-        font-family: "Glegoo", "Noto Sans", sans-serif;
-        font-weight: 700;
-    }
+	.woocommerce-shop .wp-block-navigation .wp-block-navigation-item__content {
+		font-size: 1.2rem;
+		font-family: "Glegoo", "Noto Sans", sans-serif;
+		font-weight: 700;
+	}
 
-    .woocommerce-shop .wp-container-2 {
-        gap: 5%;
-    }
+	.woocommerce-shop .wp-container-2 {
+		gap: 5%;
+	}
 
-    .woocommerce-shop .wc-block-components-product-name {
+	.woocommerce-shop .wc-block-components-product-name {
 		font-size: 1.1rem;
 		font-family: "Glegoo", "Noto Sans", sans-serif;
 	}
 
-    @media screen and (min-width: 600px) {
-        .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-            margin-top: -54px;
-        }
-    }
+	@media screen and (min-width: 600px) {
+		.woocommerce-shop .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+			margin-top: -54px !important;
+		}
+	}
 
-    ul.tabs.wc-tabs {	/* Fjern useless tab liste på shop items */
+	ul.tabs.wc-tabs {	/* Fjern useless tab liste på shop items */
 		display: none;
 	}
 
@@ -289,6 +289,7 @@ hvem er jeg */
 		width: 100% !important;
 	}
 /* --- (slut på rettelser til webshop) --------- */
+
 
 /* --- Styling af Footer ----------------------- */
     footer .col-full {
@@ -332,7 +333,7 @@ hvem er jeg */
     footer .policies {
         width: 90%;
         margin: 0 auto;
-        font-size: 0.8rem;
+		font-size: 0.8rem;
     }
 
     footer .policies a {
@@ -341,7 +342,7 @@ hvem er jeg */
 
     footer .copyright {
         margin: 18px 0;
-        font-size: 0.8rem;
+		font-size: 0.8rem;
     }
 
     footer .copyright p {
@@ -433,52 +434,100 @@ hvem er jeg */
 }
 
 
-.page-id-179 .kontaktboks {
+.page-id-179 .page-id-551 .kontaktboks {
     display: flex;
+	flex-direction:column-reverse;
     justify-content: space-around;
     align-content:space-around;
-    gap: 50px;
 }
 
-.page-id-179 .btn {
+.page-id-179 .page-id-551 .kontakt h2 {
+	font-size:35px
+}
+
+.page-id-179 .page-id-551 .produkt h2 {
+	font-size:35px;
+}
+
+.page-id-179 .page-id-551 input {
+	margin-bottom:20px;
+}
+
+.page-id-179 .page-id-551 textarea {
+	margin-bottom:20px;
+}
+
+.page-id-179 .page-id-551 .btn {
     background-color:#7C7065 ;
     width: 293px !important;
     height: 77px;
     color:#ffff;
  }
 
-.page-id-179 .produkt {
+.page-id-179 .page-id-551 .produkt {
     display: flex;
     flex-direction: column;
     
 }
 
-.page-id-179 .checkboks {
+.page-id-179 .page-id-551 .checkboks {
     display: flex;
     flex-direction: column;
+    margin-top:20px;
+	align-items:flex-start;
+}
+
+.page-id-179 .page-id-551 .sms {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.page-id-179 .page-id-551 .ringer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.page-id-179 .page-id-551 .notifikationer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.page-id-179 .page-id-551 .svendborg {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.page-id-179 .page-id-551 .information {
+    display: flex;
+    flex-direction: column;
+	align-items:flex-start;
     
 }
 
-.page-id-179 .information {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.page-id-179 .information * {
+.page-id-179 .page-id-551 .information * {
     width: 100%;
 }
 
-.page-id-179 .bokslille {
+.page-id-179 .page-id-551 .bokslille {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.page-id-179 .bokslille * {
+.page-id-179 .page-id-551 .bokslille * {
     width: 100%;
 }
 
-.page-id-179 .billede {
+.page-id-179 .page-id-551 .billede {
     display: flex;
+}
+
+@media screen and (min-width: 992px) {
+	.page-id-179 .page-id-551 .kontaktboks {
+		display:flex;
+		flex-direction:row;
+		gap: 50px;
+		align-items:baseline;
+	}
 }
