@@ -17,6 +17,20 @@ Updated: 2022-05-25 11:49:29
     margin: 0;
 }
 
+/* Hero Billeder */
+.hero{
+	height: 80vh;
+	width: 100vw;
+	background-image: url('http://mahadeva.dk/wp-content/uploads/2022/06/DSC0504-scaled.jpg');
+}
+
+.heroh2{
+	position: relative;
+	width:100%;
+	text-align: center;
+	bottom: -20vh;
+}
+
 /* Fiks af Logo + Basket til Navbar */
     #site-header-cart {	/* Fiks alignment på indkøbskurv */
         width: 70px;
@@ -126,50 +140,30 @@ a.wp-block-button__link {
 }
 
 .topboxa {
-
-	background-color: #7C7065;
-	border: none;
-	color: #FFFFFF;
+	background-color: white;
+	border-style: solid;
+	border: 3px;
+	border-color: #7C7065;
+	color: #7C7065;
 	text-align: center;
 	font-size: 28px;
 	padding: 20px;
 	width: 200px;
-	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
 	text-transform: capitalize;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.topboxa span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.topboxa:hover {
+	background-color: #7C7065;
+	color: white;
 }
 
-.topboxa span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.topboxa:hover span {
-  padding-right: 25px;
-}
-
-.topboxa:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 .bottombox{
 	background-color: #ffffff;
 	padding: 45px;
-}
 }
 
 
@@ -426,4 +420,3 @@ hvem er jeg */
 .page-id-179 .billede {
     display: flex;
 }
-
