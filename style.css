@@ -139,24 +139,22 @@ a.wp-block-button__link, button.add_to_cart_button {
 
 /*  ---> specialarbejde <--- */
 .topbox {
-	position: absolute;
-	z-index: 100;
-	top: 70vh;
-	right: 2%;
-	height: 60%;
-	width: 22%;
-	background-color: #ffffff;
-	padding: 45px;
+    position: absolute;
+    z-index: 100;
+    top: 400px;
+    right: 5%;
+    width: calc(240px + 4%);
+    background-color: #ffffff;
+    padding: 3%;
 }
+
 .topboxh3 {
 	padding-bottom: 30px;
 }
 
 .topboxa {
 	background-color: white;
-	border-style: solid;
-	border: 3px;
-	border-color: #7C7065;
+    border: 3px solid #7C7065 !important;
 	color: #7C7065;
 	text-align: center;
 	font-size: 28px;
@@ -165,7 +163,7 @@ a.wp-block-button__link, button.add_to_cart_button {
 	cursor: pointer;
 	margin: 5px;
 	text-transform: capitalize;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.05) 0px 10px 10px;
 }
 
 .topboxa:hover {
@@ -177,6 +175,18 @@ a.wp-block-button__link, button.add_to_cart_button {
 .bottombox{
 	background-color: #ffffff;
 	padding: 45px;
+}
+
+article#post-66 .wp-block-columns {   /* Fiks item alignment på forside */
+	align-items: center !important;
+}
+
+.wp-container-11.wp-block-columns {   /* Fiks item alignment på Specialarbejde side */
+	align-items: center !important;
+}
+
+article#post-345 .wp-block-columns {   /* Fiks item alignment på Læderrep. og Hælebar side */
+	align-items: center !important;
 }
 
 
@@ -270,6 +280,14 @@ hvem er jeg */
             margin-top: -54px;
         }
     }
+
+    ul.tabs.wc-tabs {	/* Fjern useless tab liste på shop items */
+		display: none;
+	}
+
+	.woocommerce-tabs .panel {	/* Fjern useless tab liste på shop items */
+		width: 100% !important;
+	}
 /* --- (slut på rettelser til webshop) --------- */
 
 /* --- Styling af Footer ----------------------- */
