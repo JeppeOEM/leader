@@ -298,6 +298,9 @@ hvem er jeg */
 
     footer#colophon {
         padding: 0;
+        background-image: url(https://mahadeva.dk/wp-content/uploads/2022/06/Footer-Texture-scaled.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
 	footer#colophon * {
