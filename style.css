@@ -131,6 +131,14 @@ body {
 	font-family: "Glegoo", "Noto Sans", serif !important;
 }
 
+.wp-block-image .aligncenter {
+    width: 100%;
+}
+
+.wp-block-image img {
+    width: 100%;
+}
+
 a.wp-block-button__link, button.add_to_cart_button {
 	font-size: 1.15rem !important;
 	padding: 12px !important;
@@ -177,15 +185,11 @@ a.wp-block-button__link, button.add_to_cart_button {
 	padding: 45px;
 }
 
-article#post-66 .wp-block-columns {   /* Fiks item alignment på forside */
+article#post-66 .wp-block-columns, article#post-186 .wp-block-columns, article#post-345 .wp-block-columns {   /* Fiks item alignment på diverse sider */
 	align-items: center !important;
 }
 
 .wp-container-11.wp-block-columns {   /* Fiks item alignment på Specialarbejde side */
-	align-items: center !important;
-}
-
-article#post-345 .wp-block-columns {   /* Fiks item alignment på Læderrep. og Hælebar side */
 	align-items: center !important;
 }
 
