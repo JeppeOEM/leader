@@ -11,30 +11,235 @@ Updated: 2022-05-25 11:49:29
 
 
 
-
 * {
     padding: 0;
     margin: 0;
 }
 
-/* Hero Billeder */
+
+/* --- Hero Billeder ------------------------ */
 .hero{
-	height: 80vh;
+	height: 44vh;
 	width: 100vw;
 	background-image: url('http://mahadeva.dk/wp-content/uploads/2022/06/DSC0504-scaled.jpg');
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 0;
 }
 
 .heroh2{
 	position: relative;
 	width:100%;
+	font-size: 1.8rem;
 	text-align: center;
-	bottom: -20vh;
+	top: 30vh;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 22px rgba(0,0,0,0.7);
+	font-weight: 700;
 }
+
+/*bæredygtighed side*/
+.page-id-186 .wp-container-5 {margin-top: 50vh;}
+.page-id-186 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/05/AlfredAndersenLaeder_May2021-6233-1-scaled.jpg");}
+
+/*hælebar*/
+.page-id-345 .wp-container-3 {margin-top: 50vh;}
+.page-id-345 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/06/AlfredAndersenLaeder_May2021-6206-scaled.jpg");}
+
+/*specialarbejde*/
+.page-id-179 .wp-container-8 {margin-top: 50vh;}
+.page-id-179 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/06/Specialvarer-hero-1.jpg");}
+/* .page-id-179 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/05/AlfredAndersenLaeder_May2021-6238-scaled.jpg");} */
+
+/*forside*/
+.page-id-728 .wp-container-6 {margin-top: 50vh;}
+.page-id-728 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/06/Forside-Hero-Banner.jpg");}
+
+/*hvem er jeg*/
+.page-id-20 .wp-container-4 {margin-top: 50vh;}
+.page-id-20 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/05/AlfredAndersenLaeder_May2021-6274_CUT.png"); background-position: top center;}
+
+/*shop*/
+#main > header > div > h2 {margin-top: 50vh;}
+.woocommerce-shop .herostartside {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/06/Webshop-banner-scaled.jpg");}
+.page-description .shop {margin-top: -100h;}
+
+@media only screen and (min-width: 768px) {
+	.hero{
+		height: 60vh;
+	}
+	.heroh2{
+		font-size: 2.8rem;
+		top: 45vh;
+	}
+	
+	/* Fiks af Top Margin */
+	.page-id-186 .wp-container-5, .page-id-345 .wp-container-3, .page-id-179 .wp-container-8, .page-id-728 .wp-container-6, .page-id-20 .wp-container-4, #main > header > div > h2 {
+		margin-top: 65vh;
+	}
+	.page-description .shop {
+		margin-top: -100h;
+	}
+	.page-id-728 .hero {background-image: url("https://mahadeva.dk/wp-content/uploads/2022/06/Forside-Hero-Banner-large.jpg");}
+}
+
+@media only screen and (min-width: 1000px) {
+	.hero{
+		height: 90vh;
+	}
+	.heroh2{
+		font-size: 4.2rem;
+		top: 60vh;
+	}
+	
+	/* Fiks af Top Margin */
+	.page-id-186 .wp-container-5, .page-id-345 .wp-container-3, .page-id-179 .wp-container-8, .page-id-728 .wp-container-6, .page-id-20 .wp-container-4, #main > header > div > h2 {
+		margin-top: 95vh;
+	}
+	.page-description .shop {
+		margin-top: -100h;
+	}
+}
+
+
+
+
+
+/* --- (slut på hero billeder) ----------------- */
+
+
+
 
 /* Fiks af Logo, Font + Basket til Navbar */
 	#masthead.site-header {
 		font-family: "Glegoo", "Noto Sans", sans-serif;
 	}
+
+
+
+@media only screen and (min-width: 1000px) {
+	/* Fiks af Logo, Font + Basket til Navbar */
+	#masthead.site-header {
+		position: fixed;
+		top: -1.6rem;
+		left: 0;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 100vw;
+		justify-content: space-between;
+		height: 7rem;
+	}
+
+#site-navigation {
+	width: 100%;
+		display: flex;
+	align-items: center;
+}
+
+.storefront-primary-navigation {
+	width: 100%;
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	}
+	
+	.storefront-primary-navigation > .col-full {
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	width: auto;
+	max-width: auto;
+	}
+	
+	#menu-hovedmenu {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+	
+	.menu-item {
+		width: auto;
+	}
+	.menu-item-353 {
+		width: auto;
+	}
+		
+	
+		.menu-item > a {
+		width: 100%;
+		word-wrap: normal !important;
+		word-break: none;
+	}
+
+.site-logo {
+	width: 5rem;
+	height: 5rem;
+}
+}
+
+@media only screen and (min-width: 1339px) {
+	/* Fiks af Logo, Font + Basket til Navbar */
+	#masthead.site-header {
+		position: fixed;
+		top: -1rem;
+		left: 0;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 100vw;
+		justify-content: space-between;
+		height: 7rem;
+	}
+
+#site-navigation {
+	width: 120%;
+		display: flex;
+	align-items: center;
+}
+
+.storefront-primary-navigation {
+	width: 100%;
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	}
+	
+	.storefront-primary-navigation > .col-full {
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	width: auto;
+	max-width: auto;
+	}
+	
+	#menu-hovedmenu {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+	
+	.menu-item {
+		width: 10rem;
+	}
+	.menu-item-353 {
+		width: 16rem;
+	}
+		
+	
+		.menu-item > a {
+		width: 100%;
+		word-wrap: normal !important;
+		word-break: none;
+	}
+
+.site-logo {
+	width: 5rem;
+	height: 5rem;
+}
+}
 
     #site-header-cart {	/* Fiks alignment på indkøbskurv */
         width: 70px;
@@ -49,10 +254,17 @@ Updated: 2022-05-25 11:49:29
     }
 /* -------------------------------- */
 
+.home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header {
+    margin-bottom: 0;
+}
 
+
+
+/*
 .entry-content {
     margin-top: -1.3rem
 }
+*/
 
 
 /* tekst til hero billed */
@@ -118,11 +330,76 @@ body {
 	font-size: 1.1rem;
 }
 
+.page-id-728 article * {
+	font-family: "Glegoo", "Noto Sans", sans-serif;
+}
+
 #post-20 > div.entry-content > div.wp-container-4.wp-block-group > div > div.wp-container-2.wp-block-column{
 	margin-top: 5%
 }
 
 /* startside */
+
+.knapstartside {
+	
+	background-color: #7C7065;
+	opacity: 0.5;
+	
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	height:150px;
+	cursor: pointer;
+	margin: 5px;
+	text-transform: capitalize;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.05) 0px 10px 10px;
+	position:absolute;
+	top:1800px;
+}
+
+@media only screen and (max-width: 400px) {
+	.knapstartside {
+		position:absolute;
+		top:1425px;
+		font-size:19px;
+		height:80px;
+	}
+}
+
+@media only screen and (max-width: 1022px) {
+	.knapstartside {
+		position:absolute;
+		top:1725px;
+		font-size:19px;
+		height:80px;
+	}
+}
+
+@media only screen and (max-width: 1325px) {
+	.knapstartside {
+		position:absolute;
+		top:1570px;
+		font-size:19px;
+		height:80px;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.knapstartside {
+		position:absolute;
+		top:1935px;
+		font-size:19px;
+		height:80px;
+	}
+}
+
+.knapstartside:hover {
+	background-color: white;
+	color: #7C7065;
+}
+
 .page-id-159 .widget-area {
     display: none;
 }
@@ -149,12 +426,19 @@ a.wp-block-button__link, button.add_to_cart_button {
 .topbox {
     position: absolute;
     z-index: 100;
-    top: 400px;
+    top: 310px;
     right: 5%;
-    width: calc(240px + 4%);
+    width: calc(260px + 4%);
     background-color: #ffffff;
     padding: 3%;
 }
+
+
+@media only screen and (max-width: 1339px) {
+	.topbox{
+		display:none;
+	}
+	}
 
 .topboxh3 {
 	padding-bottom: 30px;
@@ -185,11 +469,19 @@ a.wp-block-button__link, button.add_to_cart_button {
 	padding: 45px;
 }
 
-article#post-66 .wp-block-columns, article#post-186 .wp-block-columns, article#post-345 .wp-block-columns {   /* Fiks item alignment på diverse sider */
+.page-id-728 article .wp-block-columns {   /* Fiks item alignment på forside */
 	align-items: center !important;
 }
 
 .wp-container-11.wp-block-columns {   /* Fiks item alignment på Specialarbejde side */
+	align-items: center !important;
+}
+
+article#post-345 .wp-block-columns {   /* Fiks item alignment på Læderrep. og Hælebar side */
+	align-items: center !important;
+}
+
+.page-id-186 article .wp-block-columns {   /* Fiks item alignment på Bæredygtighed side */
 	align-items: center !important;
 }
 
@@ -260,6 +552,23 @@ hvem er jeg */
 
 
 /* --- Rettelser til Webshop ------------------- */
+@media screen and (min-width: 1000px) {
+	.woocommerce-shop .woocommerce, .page-id-291 .site-content, .page-id-159 .site-content, .page-id-289 .site-content, .page-id-297 .site-content, .page-id-299 .site-content, body.error404, .page-id-551 .site-content {
+		margin-top: 180px;
+	}
+}
+	.page-id-291 .wp-block-navigation__container {
+		height: 200px;
+		font-size: 1.2rem;
+		font-family: "Glegoo", "Noto Sans", sans-serif;
+		font-weight: 700;
+	}
+
+	.page-id-291 .wp-block-navigation__container a {
+		text-decoration: none;
+	}
+
+
 	.woocommerce-shop .wp-block-navigation.items-justified-center {
 		min-height: 72px;
 	}
@@ -300,12 +609,12 @@ hvem er jeg */
         text-align: center;
     }
 
-    footer#colophon {
-        padding: 0;
-        background-image: url(https://mahadeva.dk/wp-content/uploads/2022/06/Footer-Texture-scaled.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+	footer#colophon {
+		padding: 0;
+		background-image: url(https://mahadeva.dk/wp-content/uploads/2022/06/Footer-Texture-scaled.jpg);
+		background-position: center;
+		background-size: cover;
+	}
 
 	footer#colophon * {
 		font-family: "Glegoo", "Noto Sans", sans-serif;
@@ -441,97 +750,97 @@ hvem er jeg */
 }
 
 
-.page-id-179 .page-id-551 .kontaktboks {
+.kontaktboks {
     display: flex;
 	flex-direction:column-reverse;
     justify-content: space-around;
     align-content:space-around;
 }
 
-.page-id-179 .page-id-551 .kontakt h2 {
+.kontakt h2 {
 	font-size:35px
 }
 
-.page-id-179 .page-id-551 .produkt h2 {
+.produkt h2 {
 	font-size:35px;
 }
 
-.page-id-179 .page-id-551 input {
+input {
 	margin-bottom:20px;
 }
 
-.page-id-179 .page-id-551 textarea {
+textarea {
 	margin-bottom:20px;
 }
 
-.page-id-179 .page-id-551 .btn {
+.btn {
     background-color:#7C7065 ;
     width: 293px !important;
     height: 77px;
     color:#ffff;
  }
 
-.page-id-179 .page-id-551 .produkt {
+.produkt {
     display: flex;
     flex-direction: column;
     
 }
 
-.page-id-179 .page-id-551 .checkboks {
+.checkboks {
     display: flex;
     flex-direction: column;
     margin-top:20px;
 	align-items:flex-start;
 }
 
-.page-id-179 .page-id-551 .sms {
+#sms {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.page-id-179 .page-id-551 .ringer {
+.ringer {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.page-id-179 .page-id-551 .notifikationer {
+.notifikationer {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.page-id-179 .page-id-551 .svendborg {
+.svendborg {
     display: flex;
     flex-direction: row-reverse;
 }
 
 
-.page-id-179 .page-id-551 .information {
+.information {
     display: flex;
     flex-direction: column;
 	align-items:flex-start;
     
 }
 
-.page-id-179 .page-id-551 .information * {
+.information * {
     width: 100%;
 }
 
-.page-id-179 .page-id-551 .bokslille {
+.bokslille {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.page-id-179 .page-id-551 .bokslille * {
+.bokslille * {
     width: 100%;
 }
 
-.page-id-179 .page-id-551 .billede {
+.billede {
     display: flex;
 }
 
 @media screen and (min-width: 992px) {
-	.page-id-179 .page-id-551 .kontaktboks {
+	.kontaktboks {
 		display:flex;
 		flex-direction:row;
 		gap: 50px;
